@@ -7,10 +7,10 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'ある日の午後、華氏94度の中、:insertx:は散歩に出かけた。普段:inserty:で過ごしている:insertx:はすぐに疲れてしまった。 そこに、友だちであるアザラシが歩いてきた。アザラシは:insertx::insertz:、どこかへ行ってしまった。アザラシは300ポンドの:insertx:へのプレゼントを運んでいたのである。';
-const insertX = ['もくもく', 'なでウサ', 'シロクマ'];
-const insertY = ['ネットの世界', '人のいない場所', 'ベッドの中'];
-const insertZ = ['の目を見つめてにこにこしながら', 'を見てびっくりしたかと思うと', 'に気づかずに楽しげに歌いながら'];
+const storyText = ':insertx::inserty::insertz:';
+const insertX = ['なんちゃッテ', 'どうしちゃったノカナ', 'オハヨウ〜'];
+const insertY = ['愛しいなぁもう', '僕は、すごく心配だよ', '今日はどんな一日だった？'];
+const insertZ = ['仕事が早く終わりそうなんだけど、ご飯でもどうかな', 'ホント可愛すぎだよ〜マッタクもう', 'に気づかずに楽しげに歌いながら'];
 
 randomize.addEventListener('click', result);
 
@@ -30,14 +30,7 @@ function result() {
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('アザラシ', name);
-  }
-
-  if (document.getElementById("jp").checked) {
-    const weight = `${Math.round(300*0.0714286)}ストーン`;
-    const temperature =  `摂氏${Math.round((94-32) * 5 / 9)}度`;
-    newStory = newStory.replace('華氏94度', temperature);
-    newStory = newStory.replace('300ポンド', weight);
+    newStory = newStory.replace('お早う', name);
   }
 
   story.textContent = newStory;

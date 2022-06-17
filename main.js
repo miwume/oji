@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = ':insertx::inserty::insertz:';
+const storyText = 'お早う:insertx::inserty::insertz:';
 const insertX = ['なんちゃッテ', 'どうしちゃったノカナ', 'オハヨウ〜'];
 const insertY = ['愛しいなぁもう', '僕は、すごく心配だよ', '今日はどんな一日だった？'];
 const insertZ = ['仕事が早く終わりそうなんだけど、ご飯でもどうかな', 'ホント可愛すぎだよ〜マッタクもう', '明日も仕事だけどなかなか寝れないよ〜'];

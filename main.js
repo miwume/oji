@@ -11,6 +11,7 @@ const storyText = '名前ちゃん！！:insertx:！:inserty:！:insertz:！';
 const insertX = ['なんちゃッテ', 'どうしちゃったノカナ', 'オハヨウ〜'];
 const insertY = ['愛しいなぁもう', '僕は、すごく心配だよ', '今日はどんな一日だった？'];
 const insertZ = ['仕事が早く終わりそうなんだけど、ご飯でもどうかな', 'ホント可愛すぎだよ〜マッタクもう', '明日も仕事だけどなかなか寝れないよ〜'];
+const insertE = ['😍', '👍', '❗️'];
 
 randomize.addEventListener('click', result);
 
@@ -20,13 +21,12 @@ function result() {
   const xItem = randomValueFromArray(insertX);
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
+  const eItem = randomValueFromArray(insertE);
 
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
-  newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertz:',zItem);
-  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':inserte:',eItem);
 
   if (customName.value !== '') {
     const name = customName.value;

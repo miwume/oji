@@ -42,3 +42,5 @@ function result() {
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+
+<button type=“link” onclick="location.href='https://miwume.github.io/oji/index2.html'">近況報告</button>

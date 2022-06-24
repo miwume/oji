@@ -42,3 +42,7 @@ function result() {
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+
+document.getElementById("link").addEventListener("click", function () {
+  location.replace("https://miwume.github.io/oji/index2.html");
+}, false);

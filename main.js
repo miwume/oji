@@ -44,5 +44,5 @@ function result() {
 }
 
 document.getElementById("link").addEventListener("click", function () {
-  location.replace("https://miwume.github.io/oji/index2.html");
+  location.replace("https://miwume.github.io/oji/index2.html/");
 }, false);

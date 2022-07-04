@@ -10,9 +10,10 @@ function randomValueFromArray(array){
 const storyText = ':insertx::inserty::insertz:名前ちゃん:inserte:';
 const insertX = ['ヤッホー🎵', 'オハヨ〜🎵', 'お疲れサマー😃'];
 const insertY = ['今日も大変だったんだね😅', '毎日頑張ってて偉いネ😘', '今日はどんな一日だった？'];
-const insertZ = ['僕は今日から名古屋に出張だよ😓🚅',
-                 'そういえば、今日は旅行で北海道にいるヨ❗️',
-                 'そういえば、昨日から出張で福岡に来ているよー😃'];
+const insertT = ['福岡' , '北海道' , '名古屋'];
+const insertZ = ['僕は今日から' + insertT + 'に出張だよ😓🚅',
+                 'そういえば、今日は旅行で' + insertT + 'にいるヨ❗️',
+                 'そういえば、昨日から出張で' + insertT + 'に来ているよー😃'];
 const insertE = ['は、今は何をしているのカナ❗️❓','に早く会って癒されたいナ^_^❗️','は、お土産は何がいい❗️❓'];
 
 randomize.addEventListener('click', result);
@@ -24,12 +25,14 @@ function result() {
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
   const eItem = randomValueFromArray(insertE);
+  const tItem = randomValueFromArray(insertT);
 
   newStory = newStory.replace(':inserte:',eItem);
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
   newStory = newStory.replace(':inserte:',eItem);
+  newStory = newStory.replace(':insertt:',tItem);
 
   if (customName.value !== '') {
     const name = customName.value;

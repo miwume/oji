@@ -24,6 +24,7 @@ function result() {
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
   const eItem = randomValueFromArray(insertE);
+  
 
   newStory = newStory.replace(':inserte:',eItem);
   newStory = newStory.replace(':insertx:',xItem);
